@@ -29,7 +29,8 @@ import org.jetbrains.kotlin.descriptors.CallableMemberDescriptor.Kind.DELEGATION
 import org.jetbrains.kotlin.descriptors.CallableMemberDescriptor.Kind.FAKE_OVERRIDE
 import org.jetbrains.kotlin.diagnostics.DiagnosticFactory2
 import org.jetbrains.kotlin.diagnostics.DiagnosticFactoryWithPsiElement
-import org.jetbrains.kotlin.diagnostics.Errors.*import org.jetbrains.kotlin.diagnostics.rendering.DeclarationWithDiagnosticComponents
+import org.jetbrains.kotlin.diagnostics.Errors.*
+import org.jetbrains.kotlin.diagnostics.rendering.DeclarationWithDiagnosticComponents
 import org.jetbrains.kotlin.incremental.components.NoLookupLocation
 import org.jetbrains.kotlin.lexer.KtTokens
 import org.jetbrains.kotlin.platform.PlatformSpecificDiagnosticComponents

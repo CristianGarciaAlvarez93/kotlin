@@ -12,7 +12,10 @@ import org.jetbrains.kotlin.renderer.DescriptorRenderer
 data class DeclarationWithDiagnosticComponents(
     val declaration: DeclarationDescriptor,
     val diagnosticComponents: PlatformSpecificDiagnosticComponents
-)
+) : Iterable<Any> {
+    override fun iterator() =
+        sequenceOf(declaration, diagnosticComponents).iterator()
+}
 
 class AnnotationsWhitelistDescriptorRenderer(
     private val baseRenderer: DescriptorRenderer,
